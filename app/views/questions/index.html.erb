@@ -1,0 +1,10 @@
+<h1> Questions </h1>
+
+<% @questions.each do |question| %>
+   <div>
+     <div><%= link_to question.title, question %></div>
+     <div><%= question.body %></div>
+     <div><%= question.resolved %></div>
+   </div>
+   <br>
+<% end %>
