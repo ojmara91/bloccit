@@ -1,9 +1,4 @@
 
-gem 'bootstrap-sass'
-
-
-gem 'pry-rails', :group => :development
-
 source 'https://rubygems.org'
 
 
@@ -62,4 +57,9 @@ group :development, :test do
 
   gem 'figaro', '1.0'
 
+
 end
+gem 'bootstrap-sass'
+
+
+gem 'pry-rails', :group => :development
