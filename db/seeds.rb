@@ -1,5 +1,10 @@
 require 'faker'
 
+User.destroy_all
+Topic.destroy_all
+Post.destroy_all
+Comment.destroy_all
+
 # Create Users
  5.times do
    user = User.new(
@@ -84,7 +89,7 @@ require 'faker'
    email:    'member@example.com',
    password: 'helloworld'
  )
- member.skip Confirmation!
+ member.skip_confirmation!
  member.save!
 
 
